@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.uzio</groupId>
+	<artifactId>jwt-sso</artifactId>
+	<version>10.1</version>
+	<packaging>jar</packaging>
+
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>JWT library for Uzio SSO. This library is needed to obtain SSO JWT token from UZIO.</description>
+	<url>http://github.com/Uzio-Technology/jwt-sso</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>11</java.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Auth0 JWT -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>4.4.0</version>
+		</dependency>
+
+		<!-- Jackson -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.13.0</version>
+		</dependency>
+
+		<!-- Spring Web -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>5.3.9</version>
+		</dependency>
+
+		<!-- SLF4J API -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.32</version>
+		</dependency>
+
+		<!-- Logback - SLF4J implementation -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.6</version>
+		</dependency>
+
+	</dependencies>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Gagan Yadav</name>
+			<email>gagan.yadav@uzio.com</email>
+			<organization>com.uzio</organization>
+			<organizationUrl>http://www.uzio.com</organizationUrl>
+		</developer>
+		<developer>
+			<name>Rahul Saxena</name>
+			<email>rahul.saxena@uzio.com</email>
+			<organization>com.uzio</organization>
+			<organizationUrl>http://www.uzio.com</organizationUrl>
+		</developer>
+	</developers>
+
+
+	<scm>
+		<connection>scm:git:git://github.com/Uzio-Technology/jwt-sso.git</connection>
+		<developerConnection>scm:git:ssh://github.com:Uzio-Technology/jwt-sso.git</developerConnection>
+		<url>http://github.com/Uzio-Technology/jwt-sso</url>
+	</scm>
+
+
+</project>
