@@ -6,6 +6,6 @@ public class AuthConstants {
 	
 	public static final String APP_INTEGRATIONS_CALLBACK_PATH = "/app/integrations/sso/callback";
 	
-	public static final Long CLIENT_JWT_EXPIRATION = 20L;
+	public static final Long CLIENT_JWT_EXPIRATION = 60L;
 	
 }

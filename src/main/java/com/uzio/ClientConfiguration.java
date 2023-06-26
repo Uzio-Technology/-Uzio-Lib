@@ -16,7 +16,9 @@ public class ClientConfiguration implements Serializable {
 	private String clientId;
 	@JsonIgnore
 	private String clientSecret;
+	@JsonIgnore
 	private String issuer;
+	@JsonIgnore
 	private String audience;
 	@JsonIgnore
 	private String baseUrl;

@@ -13,5 +13,5 @@ public class AuthResponse implements Serializable {
 	
 	private String errorMessage;
 	
-	private int errorCode;
+	private String errorCode;
 }
