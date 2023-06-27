@@ -1,4 +1,4 @@
-# Java library to support SSO into UZIO applications. This library is needed to obtain SSO JWT token from UZIO.
+# Java library to support SSO into UZIO applications. This library is needed to obtain SSO JWT token from UZIO to github.
 
 # Create com.uzio.ApiClient instance using ClientConfiguration details as shared by UZIO team.
 # Obtain UZIO app redirect URL for a user by calling com.uzio.ApiClient.getRedirectUrl(AuthDetails). AuthDetails are required to identify the user in UZIO system.
