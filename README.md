@@ -1,9 +1,9 @@
 # Java library to support SSO into UZIO applications. This library is needed to obtain SSO JWT token from UZIO to github.
 
 - Configure the following application properties in the client web application and create an instance of ClientConfiguration using these properties.
-‘clientId’: Identifies a BT client in Uzio (to be shared by the Uzio team).
-‘clientSecret’: BT-specific secret string required for signing the bearer token (to be shared by the Uzio team).
-‘issuer’: Identifies the app that issued the bearer token (shared by the BT team with Uzio).
+‘clientId’: Identifies a client in Uzio (to be shared by the Uzio team).
+‘clientSecret’: client-specific secret string required for signing the bearer token (to be shared by the Uzio team).
+‘issuer’: Identifies the app that issued the bearer token (shared by the client team with Uzio).
 ‘audience’: Recipient of the bearer token (to be shared by the Uzio team).
 ‘baseUrl’: Uzio app URL (to be shared by the Uzio team).
 - Initialize ApiClient by passing ClientConfiguration instance.
